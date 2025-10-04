@@ -119,3 +119,9 @@ jobs:
         with:
           name: u-boot
           path: "uboot-mt7621/archive/"
+
+      - name: Upload config
+        uses: actions/upload-artifact@v4
+        with:
+          name: mt7621_defconfig
+          path: "uboot-mt7621/archive/"
